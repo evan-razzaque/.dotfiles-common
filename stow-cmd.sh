@@ -6,7 +6,7 @@ shopt -u nullglob
 
 if [[ ${#PACKAGES} -eq 0 ]]; then
 	echo "No packages found"
-	exit
+	exit 1
 fi
 
 PACKAGES=("${@:-${PACKAGES[@]}}")
